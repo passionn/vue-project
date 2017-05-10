@@ -1,10 +1,12 @@
-# vuexpro
+# vue 全家桶项目
 
-> A Vue.js project
+> webpack, vue, vuex, vue-router
 
-## Build Setup
+## 开始
 
-``` bash
+```
+git clone git@github.com:passionn/vue-project.git
+
 # install dependencies
 npm install
 
@@ -13,6 +15,11 @@ npm run dev
 
 # build for production with minification
 npm run build
+
+```
+本项目是局域vue-cli 初始化
+
+``` bash
 
 # build for production and view the bundle analyzer report
 npm run build --report
@@ -27,4 +34,5 @@ npm run e2e
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## License
+@MIT
