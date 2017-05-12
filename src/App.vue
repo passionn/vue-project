@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <div class="box_bg">
+
+    </div>
     <router-view></router-view>
   </div>
 </template>
@@ -20,4 +23,13 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.box_bg{
+  width:110px;
+  height:119px;
+  background:url(./assets/gift4.png) no-repeat;
+
+}
+
+
 </style>
