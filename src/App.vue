@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <div class="box_bg">
-
-    </div>
+    <!--<div class="box_bg"></div>-->
     <router-view></router-view>
   </div>
 </template>

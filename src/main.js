@@ -42,6 +42,8 @@ import Works from './components/App.vue'
 import store from './store'
 import { currency } from './currency'
 
+import 'bootstrap/dist/css/bootstrap.css'
+
 Vue.filter('currency', currency)
 
 new Vue({
