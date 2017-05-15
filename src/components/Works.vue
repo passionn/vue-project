@@ -31,7 +31,7 @@
                     </tr>
                     <tr>
                         <th>标题</th>
-                        <td class="tdwidth">文档地址</td>
+                        <td>文档地址</td>
                         <td>2</td>
                         <td>3</td>
                         <td>4</td>
@@ -53,19 +53,23 @@
 </template>
 <script>
 export default {
-   name: 'hello',
-    data () {
-        return {
-        msg: 'Welcome to Your Vue.js App'
-        }
+    name: 'hello',
+    data(){
+        return {data:""}
+    },
+    created:function(){
+        this.$http.get('../api/data.json').then(function(data){
+            console.log(data);
+        },function(response){
+            console.log(response);
+        })
     }
+
 }
 </script>
 
 <style>
-    .tdwidth{
-        max-width: 200px;
-    }
+
 </style>
 
 
