@@ -13,37 +13,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th>标题</th>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <th>标题</th>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <th>标题</th>
-                        <td>文档地址</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <th>标题</th>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
+                    <tr v-for="item in data">
+                        <td>{{ item.title }}</td>
+                        <td> <a :href="item.document" target="_blank">文档</a></td>
+                        <td>{{ item.date }}</td>
+                        <td>{{ item.fe }}</td>
+                        <td>{{ item.serfer }}</td>
+                        <td> {{ item.state==1?"完成":"进行中" }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -58,8 +34,9 @@ export default {
         return {data:""}
     },
     created:function(){
-        this.$http.get('../api/data.json').then(function(data){
-            console.log(data);
+        this.$http.get('/static/data.json').then(function(data){
+            console.log(data)
+            this.data=data.body.data
         },function(response){
             console.log(response);
         })

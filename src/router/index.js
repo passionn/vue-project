@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import App from '@/components/App'
 import Works from '@/components/Works'
+import Liveme from '@/components/Liveme'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path:'/shopping',
       name:'shopping',
       component:App
+    },
+    {
+      path:'/liveme',
+      name:'liveme',
+      component:Liveme
     }
   ]
 })

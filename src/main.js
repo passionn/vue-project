@@ -44,6 +44,7 @@ import { currency } from './currency'
 import VueResource from 'vue-resource'
 
 import 'bootstrap/dist/css/bootstrap.css'
+import './assets/style.css'
 
 Vue.filter('currency', currency)
 Vue.use(VueResource)
