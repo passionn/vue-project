@@ -7,3 +7,8 @@ export const addToCart = ({ commit }, product) => {
     })
   }
 }
+
+export const saveLocal= ({ commit },item )=>{
+    console.log(item);
+    console.log(JSON.stringify(item));
+}

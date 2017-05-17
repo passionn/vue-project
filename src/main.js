@@ -39,6 +39,7 @@ import App from './App'
 import router from './router'
 import Shopping from './components/App.vue'
 import Works from './components/App.vue'
+import Liveme from './components/Liveme.vue'
 import store from './store'
 import { currency } from './currency'
 import VueResource from 'vue-resource'
@@ -54,5 +55,5 @@ new Vue({
   router,
   store,
   template: '<App/>',
-  components: { App ,Shopping,Works }
+  components: { App ,Shopping,Works,Liveme }
 })
