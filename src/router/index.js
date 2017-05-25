@@ -4,6 +4,7 @@ import Hello from '@/components/Hello'
 import App from '@/components/App'
 import Works from '@/components/Works'
 import Liveme from '@/components/Liveme'
+import Swipe from '@/components/swipe'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path:'/liveme',
       name:'liveme',
       component:Liveme
+    },
+    {
+      path:'/swipe',
+      name:'swpie',
+      component:Swipe
     }
   ]
 })

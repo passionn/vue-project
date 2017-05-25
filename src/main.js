@@ -40,20 +40,23 @@ import router from './router'
 import Shopping from './components/App.vue'
 import Works from './components/App.vue'
 import Liveme from './components/Liveme.vue'
+import Swipe from './components/swipe.vue'
 import store from './store'
 import { currency } from './currency'
 import VueResource from 'vue-resource'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/style.css'
 
 Vue.filter('currency', currency)
 Vue.use(VueResource)
+Vue.use(VueAwesomeSwiper)
 
 new Vue({
   el: '#app',
   router,
   store,
   template: '<App/>',
-  components: { App ,Shopping,Works,Liveme }
+  components: { App ,Shopping,Works,Liveme,Swipe }
 })
