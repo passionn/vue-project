@@ -31,7 +31,8 @@
             'saveLocal'
         ]),
         created () {
-            this.$store.dispatch("getLivelist")
+            this.$store.dispatch("getLivelist"),
+            this.$store.dispatch("userList")
         }
     }
 </script>

@@ -8,5 +8,13 @@ export default {
         },function(response){
             console.log(response);
         })
+    },
+    userList(cb){
+        Vue.http.get('http://localhost:8080/user/userlist').then(function(data){
+            console.log('mock 拦截',data)
+            cb(data.body)
+        },function(response){
+            console.log(response);
+        })
     }
 }

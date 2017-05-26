@@ -49,6 +49,13 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/style.css'
 
+import Test from './test'
+
+const dev= process.env.NODE_ENV == 'production'
+ if(dev){
+    //import './mock'
+ }
+
 Vue.filter('currency', currency)
 Vue.use(VueResource)
 Vue.use(VueAwesomeSwiper)

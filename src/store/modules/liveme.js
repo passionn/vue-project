@@ -25,6 +25,11 @@ const actions={
         List.getLivelist(data=>{
             commit(types.RECEIVE_LIVELIST,{ data })
         })
+    },
+    userList({ commit }){
+        List.userList(data=>{
+            
+        })
     }
 }
 
