@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import domain from './domain'
 
 export default {
     getLivelist(cb){
@@ -10,7 +11,7 @@ export default {
         })
     },
     userList(cb){
-        Vue.http.get('http://localhost:8080/user/userlist').then(function(data){
+        Vue.http.get('/posts/1').then(function(data){
             console.log('mock 拦截',data)
             cb(data.body)
         },function(response){

@@ -5,7 +5,9 @@
     <h2>Products</h2>
     <product-list></product-list>
     <hr>
-    <cart></cart>
+    <cart>
+      <p>hello word!</p>
+    </cart>
   </div>
 </template>
 

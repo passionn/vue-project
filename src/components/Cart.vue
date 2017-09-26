@@ -10,6 +10,9 @@
     <p>Total: {{ total | currency }}</p>
     <p><button :disabled="!products.length" @click="checkout(products)">Checkout</button></p>
     <p v-show="checkoutStatus">Checkout {{ checkoutStatus }}.</p>
+    <!--<slot>
+      备用内容
+    </slot>-->
   </div>
 </template>
 
